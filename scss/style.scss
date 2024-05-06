@@ -1,0 +1,84 @@
+$color-primaire: #9356DC;
+$color-secondaire: #ff79DA;
+$color-tertiaire: #99E2D0;
+$shadow-color: rgb(144, 144, 144);
+$font-logo: "shrikhand", sans-serif;
+$font-texte: "roboto", sans-serif;
+header {
+    box-shadow: 0px 4px 6px  $shadow-color;
+   
+    .logo {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        
+        img {
+            width: 150px;
+            margin-top: 20px;
+            height: 30px;
+        }
+    }
+    .location {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 4px 6px  $shadow-color;
+        
+        padding-left: 125px;
+        gap: 10px;
+        background-color: #dad8d8;
+       p {
+        font-family: $font-texte;
+        display: flex;
+        justify-content: space-between;
+        
+       }
+    }
+}
+
+.info {
+    background-color: rgb(245, 243, 243);
+
+    .info-titre {
+        display: flex;
+        font-family: $font-texte;
+        text-align: center;
+        
+       
+        
+    }
+    .info-content {
+        display: flex;
+        text-align: center;
+        font-family: $font-texte;
+        font-size: 17px;
+    }
+   
+    .btn {
+        display: flex;
+        padding-bottom: 30px;
+       
+        a {
+            text-decoration: none;
+            display: flex;
+            margin-left: 80px;
+            margin-top: 30px;
+            height: 50px;
+            width: 230px;
+            font-size: 17px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            align-items: center;
+            background: linear-gradient(to bottom, $color-secondaire, $color-primaire);
+            box-shadow: 0px 4px 6px  $shadow-color;
+            p {
+                padding-left: 25px;
+                font-family: $font-texte;
+            }
+        }
+    }    
+    }
+.function {
+    font-family: $font-texte;
+}
+
