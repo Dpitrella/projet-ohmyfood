@@ -211,40 +211,35 @@ main {
         width: 100%;
         height: 300px;
         background-color: white;
-        
-        .flot {
+        .flot, .flot-2{
             display: flex;
             text-align: center;
             align-items: center;
             justify-content: space-around;
             position: absolute ;
+            p {
+                padding-left: 13px;
+                color: darken($color: $color-tertiaire, $amount: 50%);
+            }
+        }
+        .flot {
+           
             height: 35px;
             width: 90px;
             top: 119%;
             border-radius: 3px;
             background-color: $color-tertiaire;
             right: 40px;
-            p {
-                padding-left: 13px;
-                color: darken($color: $color-tertiaire, $amount: 50%);
-            }
+           
         }
         .flot-2{
-            display: flex;
-            text-align: center;
-            justify-content: space-around;
-            align-items: center;
-            position: absolute;
             height: 35px;
             width: 90px;
             top: 159%;
             border-radius: 3px;
             background-color: $color-tertiaire;
             right: 40px;
-            p {
-                padding-left: 13px;
-                color: darken($color: $color-tertiaire, $amount: 50%);
-            }
+           
         }
         img{
             border-radius: 20px 20px 0px 0px;
@@ -272,45 +267,48 @@ main {
                 }
             }
 
-           //********ceurs***********//
-           .hidden-checkbox {
-            display: none;
-          }
+           //********coeurs***********//
           
-          .heart-label {
-            cursor: pointer;
-            
-            .heart {
-              display: none;
-              font-size: 25px;
+
+            .btns {
+                display: inline-block;
+                cursor: pointer;
+                
+
+                .icon-wrapper {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .fa-heart {
+                    font-size: 25px;
+                    transition: all 0.3s;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .icon-gradient {
+                    background: linear-gradient(to bottom, $color-primaire, $color-secondaire);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    opacity: 0;
+                }
+
+                .no-gradient {
+                    color: #000; 
+                    opacity: 1;
+                }
+
+                .icon-wrapper:hover .no-gradient {
+                    opacity: 0;
+                }
+
+                .icon-wrapper:hover .icon-gradient {
+                    opacity: 1;
+                }
             }
-          
-            .regular {
-              display: inline;
-            }
-          
-            .solid {
-              display: none;
-             
-            
-            }
-          }
-          
-          
-          .hidden-checkbox:checked + .heart-label .regular {
-            display: none;
-          }
-          
-          .hidden-checkbox:checked + .heart-label .solid {
-            display: inline;
-          }
-          #heart-checkbox-1,
-          #heart-checkbox-2,
-          #heart-checkbox-3,
-          #heart-checkbox-4 {
-            & + .heart-label {
-            }
-          }
         }  
     } 
 }

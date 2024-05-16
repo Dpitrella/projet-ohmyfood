@@ -7,8 +7,6 @@ header .logo {
   justify-content: space-around;
   height: 65px;
   box-shadow: 0px 4px 6px rgb(222, 222, 222);
-}
-header .logo img {
   width: 150px;
   margin-top: 20px;
   height: 30px;
@@ -198,12 +196,18 @@ main {
   height: 300px;
   background-color: white;
 }
-.restaurants .card .flot {
+.restaurants .card .flot, .restaurants .card .flot-2 {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-around;
   position: absolute;
+}
+.restaurants .card .flot p, .restaurants .card .flot-2 p {
+  padding-left: 13px;
+  color: #1b6150;
+}
+.restaurants .card .flot {
   height: 35px;
   width: 90px;
   top: 119%;
@@ -211,26 +215,13 @@ main {
   background-color: #99E2D0;
   right: 40px;
 }
-.restaurants .card .flot p {
-  padding-left: 13px;
-  color: #1b6150;
-}
 .restaurants .card .flot-2 {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
   height: 35px;
   width: 90px;
   top: 159%;
   border-radius: 3px;
   background-color: #99E2D0;
   right: 40px;
-}
-.restaurants .card .flot-2 p {
-  padding-left: 13px;
-  color: #1b6150;
 }
 .restaurants .card img {
   border-radius: 20px 20px 0px 0px;
@@ -255,28 +246,39 @@ main {
 .restaurants .card .card-info .card-texte p {
   margin-top: 0px;
 }
-.restaurants .card .card-info .hidden-checkbox {
-  display: none;
-}
-.restaurants .card .card-info .heart-label {
+.restaurants .card .card-info .btns {
+  display: inline-block;
   cursor: pointer;
 }
-.restaurants .card .card-info .heart-label .heart {
-  display: none;
+.restaurants .card .card-info .btns .icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.restaurants .card .card-info .btns .fa-heart {
   font-size: 25px;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.restaurants .card .card-info .heart-label .regular {
-  display: inline;
+.restaurants .card .card-info .btns .icon-gradient {
+  background: linear-gradient(to bottom, #9356DC, #ff79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0;
 }
-.restaurants .card .card-info .heart-label .solid {
-  display: none;
+.restaurants .card .card-info .btns .no-gradient {
+  color: #000;
+  opacity: 1;
 }
-.restaurants .card .card-info .hidden-checkbox:checked + .heart-label .regular {
-  display: none;
+.restaurants .card .card-info .btns .icon-wrapper:hover .no-gradient {
+  opacity: 0;
 }
-.restaurants .card .card-info .hidden-checkbox:checked + .heart-label .solid {
-  display: inline;
+.restaurants .card .card-info .btns .icon-wrapper:hover .icon-gradient {
+  opacity: 1;
 }
+
 footer {
   background-color: #353535;
   color: white;
