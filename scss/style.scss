@@ -12,8 +12,12 @@ header {
         display: flex;
         justify-content: center;
         font-family: $font-logo;
-        height: 75px;
+        height: 70px;
         box-shadow: 0px 4px 6px  darken($color: $color-gris, $amount: 25%);
+
+        h1 {
+            margin-top: 15px;
+        }
     }
     .location {
         position:relative;
@@ -39,14 +43,18 @@ main {
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: $color-gris;
     padding: 10px 10px 40px;
-
+    gap: 20px;
 
     .info-titre {
         display: flex;
         font-family: $font-texte;
         text-align: center; 
+        padding: 10px;
         
         h2 {
             margin-bottom: 0;
@@ -109,7 +117,7 @@ main {
         justify-content: center;
         position: absolute;
         left: 45px;
-        top: 63%;
+        top: 65.5%;
         color: white;
         background-color: $color-primaire;
     }
@@ -121,7 +129,7 @@ main {
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 75%;
+        top: 76.5%;
         left: 45px;
         background-color: $color-primaire;
         color: white;
@@ -134,7 +142,7 @@ main {
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 86%;
+        top: 87%;
         left: 45px;
         background-color: $color-primaire;
         color: white;
@@ -163,6 +171,9 @@ main {
         .fa-solid{
             justify-content: center;
             margin-top: 20px;
+        }
+        i {
+            font-size: 22px;
         }
     }
     .fun {
@@ -286,16 +297,16 @@ main {
                 right: 70px;   
             }
             .like-1 {
-                top: 140%;
+                top: 138%;
             }
             .like-2 {
-                top: 180%;
+                top: 176%;
             }
             .like-3 {
-                top: 220%;
+                top: 214%;
             }
             .like-4 {
-                top: 260%;
+                top: 252%;
             }
 
             .fa-heart {
