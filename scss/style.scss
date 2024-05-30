@@ -339,7 +339,7 @@ footer {
 
 ////************* desktop ********////
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1025px)  {
     header{
         box-shadow: none;
 
@@ -350,15 +350,15 @@ footer {
 
     main {
         margin-top: 0%;
-
+        
         .info{
             align-items: center;
 
             .info-titre {
-                font-size: 20px;
+                font-size: 26px;
             }
             .info-content {
-                font-size: 13px;
+                font-size: 20px;
             }
         }
 
@@ -371,6 +371,7 @@ footer {
                 margin: 0;
                 left: 250px;
                 height: 80px;
+                width: 80%;
             }
 
             .sec-fun {
@@ -378,27 +379,16 @@ footer {
                 flex-direction: row;
                 justify-content: center;                
                 align-items: center;
-                left: 180px;                
-
-                .fun-num {
+                left: 180px;        
+                    
+                .info-num, .info-num-2, .info-num-3{
                     display: flex;
-                    flex-direction: column;
                     position: absolute;
-                    justify-content: space-between;
-                    t
-                    .info-num, .info-num-2, .info-num-3{
-                        color: white;
-                        background-color: $color-primaire;
-                        border-radius: 20px;
-                        width: 25px;
-                        font-size: 20px;
-                       
-                    }
-                    
+                    top: 25px;     
                 }
-                .fun-text {
                     
-
+                .fun-text {
+            
                     p {
                         font-size: 15px;
                     }
@@ -416,19 +406,6 @@ footer {
                     margin: 0px;
                 }
             }
-
-            .info-num {
-                top: 75.5%;
-                left: 55px;
-            }
-            .info-num-2 {
-                top: 75.5%;
-                left: 40%;
-            }
-            .info-num-3 {
-                top: 75.5%;
-                left: 61%;
-            }
         }
     }
     
@@ -439,6 +416,7 @@ footer {
             display: flex;
             position: relative;
             left: 16%;
+            width: 80%;
         }
         .cards{
             display: grid;
@@ -465,29 +443,193 @@ footer {
                     padding-bottom: 20px;
                     padding-left: 20px;
                 }
-                .flot {
-                    left: 40%;
-                    top: 105%;
-                }
-                .flot-2 {
-                    top: 105%;
-                    left: 76%;
+               
+                .flot, .flot-2 {
+                    top: -10px;
                 }
             }
 
-            .like-1 {
-                top: 100%;
-                left: 20%;
-            }
-            .like-2 {
-                left: 50%;
-            }
-            .like-3 {
+           
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 130px;
+    }
+    .footer-titre {
+        display: flex;
+        position: relative;
+        right: 5%;
+        bottom: -48px;
+        color: white;
+        height: 50px;
+    }
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 50px;
+        right: 5%;
+        bottom: -50%;
+        padding: 0%;
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+/******************tablet*************/
 
-            }
-            .like-4 {
+@media (min-width: 600px) and (max-width: 1024px) {
 
+    header{
+        box-shadow: none;
+
+        .location{
+            box-shadow: none;
+        }
+    }
+
+    main {
+        margin-top: 0%;
+        
+        
+        .info{
+            align-items: center;
+
+            .info-titre {
+                font-size: 26px;
             }
+            .info-content {
+                font-size: 20px;
+            }
+        }
+
+        .function {
+            position: relative;
+            height: 200px;
+
+            .func-title {
+                display: flex;
+                position: absolute;
+                margin: 0;
+                left: 150px;
+                top: 20px;
+                width: 50%;
+            }
+
+            .sec-fun {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;                
+                align-items: center;
+                position: absolute;
+                width: 90%;
+                top: 130px;
+                left: 55px;      
+                    
+                .info-num, .info-num-2, .info-num-3{
+                    display: flex;
+                    position: absolute;
+                    top: 25px;     
+                    
+                }
+                    
+                .fun-text {
+                    gap: 10px;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                .fun {
+                    width: 300px;
+                    
+                }
+
+                .fa-solid {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    
+    .restaurants {
+
+        .restaurants-title {
+            margin: 0px 0px 20px 0px;
+            display: flex;
+            position: relative;
+            left: 15%;
+            width: 80%;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: 400px 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            left: 0px;
+            .card{
+                height: 100%;
+                width: 100%;
+
+                a {
+                    width: 100%;
+                }
+
+                h3 {
+                    margin-top: 10px;
+                }
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+                .card-texte {
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                }
+               
+                .flot, .flot-2 {
+                    top: 10px;
+                }
+            }
+
+           
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 130px;
+    }
+    .footer-titre {
+        display: flex;
+        position: relative;
+        right: 5%;
+        bottom: -48px;
+        color: white;
+        height: 50px;
+    }
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 50px;
+        right: 5%;
+        bottom: -50%;
+        padding: 0%;
+        
+        a {
+            color: white;
+            text-decoration: none;
         }
     }
 }

@@ -130,7 +130,6 @@ main .cards .card .anim {
   display: flex;
   position: absolute;
   right: 0%;
-  background-color: white;
 }
 main .cards .card:hover > .anim {
   animation-name: check;
@@ -138,6 +137,7 @@ main .cards .card:hover > .anim {
   animation-delay: 10ms;
   animation-timing-function: ease;
   translate: -100%;
+  background-color: white;
 }
 main .cards .card .prix {
   display: flex;
@@ -145,7 +145,7 @@ main .cards .card .prix {
   align-items: end;
   color: #000;
   height: 75px;
-  width: 70px;
+  width: 60px;
 }
 main .cards .card .check {
   display: flex;
@@ -159,17 +159,16 @@ main .cards .card .check {
   border-radius: 0px 15px 15px 0px;
   position: absolute;
 }
-
-.button {
+main .button {
   display: flex;
   justify-content: center;
   margin: 40px;
 }
-.button .btn {
+main .button .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 18px;
   border: none;
   width: 60%;
@@ -179,18 +178,17 @@ main .cards .card .check {
   box-shadow: -2px 4px 20px 0px #c4c4c4;
   transition: box-shadow 400ms, transform 400ms;
 }
-.button .btn:hover {
+main .button .btn:hover {
   transform: scale(1.01);
   background: linear-gradient(to bottom, #ff94e1, #a373de);
   box-shadow: 0px 6px 11px 9px #c4c4c4;
 }
-
-footer {
+main footer {
   background-color: #353535;
   color: white;
   font-family: "roboto", sans-serif;
 }
-footer ul {
+main footer ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -198,15 +196,85 @@ footer ul {
   margin: 0px;
   padding-bottom: 30px;
 }
-footer ul li {
+main footer ul li {
   display: flex;
   gap: 10px;
 }
-footer .footer-titre {
+main footer .footer-titre {
   display: flex;
   margin-left: 40px;
   font-family: "shrikhand", sans-serif;
   font-size: 19px;
+}
+
+/**********desktop**********/
+@media all and (min-width: 1024px) {
+  header {
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+  header img {
+    display: flex;
+    position: absolute;
+    right: 45%;
+    top: 20px;
+  }
+  main img {
+    display: flex;
+    object-fit: cover;
+    height: 390px;
+  }
+  main .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    right: 15%;
+    top: 55%;
+  }
+  main .content .resto-titre {
+    font-size: 25px;
+    font-style: italic;
+  }
+  main .content .btns-like {
+    display: flex;
+    position: absolute;
+    right: 25%;
+    top: 45px;
+  }
+  main .content .card-content {
+    width: 60%;
+  }
+  main .content .card-content .check {
+    width: 60px;
+  }
+  main .content .btn {
+    width: 200px;
+  }
+  main footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 142.8%;
+    height: 150px;
+  }
+  main .footer-titre {
+    display: flex;
+    position: absolute;
+    right: -140px;
+    top: 92%;
+  }
+  main .footer-list {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    padding: 0%;
+  }
+  main .footer-list a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=la-palette-du-gout.css.map */

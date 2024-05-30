@@ -295,7 +295,7 @@ footer .footer-titre {
   font-size: 19px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1025px) {
   header {
     box-shadow: none;
   }
@@ -309,10 +309,10 @@ footer .footer-titre {
     align-items: center;
   }
   main .info .info-titre {
-    font-size: 20px;
+    font-size: 26px;
   }
   main .info .info-content {
-    font-size: 13px;
+    font-size: 20px;
   }
   main .function {
     position: relative;
@@ -323,6 +323,7 @@ footer .footer-titre {
     margin: 0;
     left: 250px;
     height: 80px;
+    width: 80%;
   }
   main .function .sec-fun {
     display: flex;
@@ -331,18 +332,10 @@ footer .footer-titre {
     align-items: center;
     left: 180px;
   }
-  main .function .sec-fun .fun-num {
+  main .function .sec-fun .info-num, main .function .sec-fun .info-num-2, main .function .sec-fun .info-num-3 {
     display: flex;
-    flex-direction: column;
     position: absolute;
-    justify-content: space-between;
-  }
-  main .function .sec-fun .fun-num t .info-num, main .function .sec-fun .fun-num .info-num-2, main .function .sec-fun .fun-num .info-num-3 {
-    color: white;
-    background-color: #9356DC;
-    border-radius: 20px;
-    width: 25px;
-    font-size: 20px;
+    top: 25px;
   }
   main .function .sec-fun .fun-text p {
     font-size: 15px;
@@ -356,23 +349,12 @@ footer .footer-titre {
     align-items: center;
     margin: 0px;
   }
-  main .function .info-num {
-    top: 75.5%;
-    left: 55px;
-  }
-  main .function .info-num-2 {
-    top: 75.5%;
-    left: 40%;
-  }
-  main .function .info-num-3 {
-    top: 75.5%;
-    left: 61%;
-  }
   .restaurants .restaurants-title {
     margin: 0px 0px 20px 0px;
     display: flex;
     position: relative;
     left: 16%;
+    width: 80%;
   }
   .restaurants .cards {
     display: grid;
@@ -399,20 +381,161 @@ footer .footer-titre {
     padding-bottom: 20px;
     padding-left: 20px;
   }
-  .restaurants .cards .card .flot {
-    left: 40%;
-    top: 105%;
+  .restaurants .cards .card .flot, .restaurants .cards .card .flot-2 {
+    top: -10px;
   }
-  .restaurants .cards .card .flot-2 {
-    top: 105%;
-    left: 76%;
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 130px;
   }
-  .restaurants .cards .like-1 {
-    top: 100%;
-    left: 20%;
+  .footer-titre {
+    display: flex;
+    position: relative;
+    right: 5%;
+    bottom: -48px;
+    color: white;
+    height: 50px;
   }
-  .restaurants .cards .like-2 {
-    left: 50%;
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50px;
+    right: 5%;
+    bottom: -50%;
+    padding: 0%;
+  }
+  .footer-list a {
+    color: white;
+    text-decoration: none;
+  }
+}
+/******************tablet*************/
+@media (min-width: 600px) and (max-width: 1024px) {
+  header {
+    box-shadow: none;
+  }
+  header .location {
+    box-shadow: none;
+  }
+  main {
+    margin-top: 0%;
+  }
+  main .info {
+    align-items: center;
+  }
+  main .info .info-titre {
+    font-size: 26px;
+  }
+  main .info .info-content {
+    font-size: 20px;
+  }
+  main .function {
+    position: relative;
+    height: 200px;
+  }
+  main .function .func-title {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    left: 150px;
+    top: 20px;
+    width: 50%;
+  }
+  main .function .sec-fun {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    top: 130px;
+    left: 55px;
+  }
+  main .function .sec-fun .info-num, main .function .sec-fun .info-num-2, main .function .sec-fun .info-num-3 {
+    display: flex;
+    position: absolute;
+    top: 25px;
+  }
+  main .function .sec-fun .fun-text {
+    gap: 10px;
+  }
+  main .function .sec-fun .fun-text p {
+    font-size: 18px;
+  }
+  main .function .sec-fun .fun {
+    width: 300px;
+  }
+  main .function .sec-fun .fa-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .restaurants .restaurants-title {
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    position: relative;
+    left: 15%;
+    width: 80%;
+  }
+  .restaurants .cards {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    left: 0px;
+  }
+  .restaurants .cards .card {
+    height: 100%;
+    width: 100%;
+  }
+  .restaurants .cards .card a {
+    width: 100%;
+  }
+  .restaurants .cards .card h3 {
+    margin-top: 10px;
+  }
+  .restaurants .cards .card img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .restaurants .cards .card .card-texte {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  .restaurants .cards .card .flot, .restaurants .cards .card .flot-2 {
+    top: 10px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 130px;
+  }
+  .footer-titre {
+    display: flex;
+    position: relative;
+    right: 5%;
+    bottom: -48px;
+    color: white;
+    height: 50px;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50px;
+    right: 5%;
+    bottom: -50%;
+    padding: 0%;
+  }
+  .footer-list a {
+    color: white;
+    text-decoration: none;
   }
 }
 
