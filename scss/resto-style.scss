@@ -227,6 +227,10 @@ main {
         background-color: #353535;
         color: white;
         font-family: $font-texte;
+        a {
+            text-decoration: none;
+            color: white;
+        }
         ul{
             list-style-type: none;
             display: flex;

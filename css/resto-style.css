@@ -188,6 +188,10 @@ main footer {
   color: white;
   font-family: "roboto", sans-serif;
 }
+main footer a {
+  text-decoration: none;
+  color: white;
+}
 main footer ul {
   list-style-type: none;
   display: flex;

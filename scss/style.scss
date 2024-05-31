@@ -46,6 +46,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: $color-gris;
     padding: 10px 10px 40px;
     gap: 20px;
@@ -483,7 +484,7 @@ footer {
 }
 /******************tablet*************/
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 970px) and (max-width: 1024px) {
 
     header{
         box-shadow: none;
