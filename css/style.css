@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 header .logo {
   display: flex;
   justify-content: center;
@@ -27,6 +23,112 @@ header .location p {
   font-family: "roboto", sans-serif;
   display: flex;
   justify-content: space-between;
+}
+
+@media all and (min-width: 1025px) {
+  header {
+    box-shadow: none;
+  }
+  header .location {
+    box-shadow: none;
+  }
+}
+@media (min-width: 970px) and (max-width: 1024px) {
+  header {
+    box-shadow: none;
+  }
+  header .location {
+    box-shadow: none;
+  }
+}
+footer {
+  background-color: #353535;
+  color: white;
+  font-family: "roboto", sans-serif;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px;
+  padding-bottom: 30px;
+}
+footer ul li {
+  display: flex;
+  gap: 10px;
+}
+footer .footer-titre {
+  display: flex;
+  margin-left: 40px;
+  font-family: "shrikhand", sans-serif;
+  font-size: 19px;
+}
+
+@media all and (min-width: 1025px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 130px;
+  }
+  .footer-titre {
+    display: flex;
+    position: relative;
+    right: 5%;
+    bottom: -48px;
+    color: white;
+    height: 50px;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50px;
+    right: 5%;
+    bottom: -50%;
+    padding: 0%;
+  }
+  .footer-list a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media (min-width: 970px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 130px;
+  }
+  .footer-titre {
+    display: flex;
+    position: relative;
+    right: 5%;
+    bottom: -48px;
+    color: white;
+    height: 50px;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50px;
+    right: 5%;
+    bottom: -50%;
+    padding: 0%;
+  }
+  .footer-list a {
+    color: white;
+    text-decoration: none;
+  }
+}
+body {
+  margin: 0;
 }
 
 main {
@@ -268,41 +370,7 @@ main {
   opacity: 1;
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  font-family: "roboto", sans-serif;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-footer ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 0px;
-  padding-bottom: 30px;
-}
-footer ul li {
-  display: flex;
-  gap: 10px;
-}
-footer .footer-titre {
-  display: flex;
-  margin-left: 40px;
-  font-family: "shrikhand", sans-serif;
-  font-size: 19px;
-}
-
 @media all and (min-width: 1025px) {
-  header {
-    box-shadow: none;
-  }
-  header .location {
-    box-shadow: none;
-  }
   main {
     margin-top: 0%;
   }
@@ -385,42 +453,9 @@ footer .footer-titre {
   .restaurants .cards .card .flot, .restaurants .cards .card .flot-2 {
     top: -10px;
   }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    height: 130px;
-  }
-  .footer-titre {
-    display: flex;
-    position: relative;
-    right: 5%;
-    bottom: -48px;
-    color: white;
-    height: 50px;
-  }
-  .footer-list {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    height: 50px;
-    right: 5%;
-    bottom: -50%;
-    padding: 0%;
-  }
-  .footer-list a {
-    color: white;
-    text-decoration: none;
-  }
 }
 /******************tablet*************/
 @media (min-width: 970px) and (max-width: 1024px) {
-  header {
-    box-shadow: none;
-  }
-  header .location {
-    box-shadow: none;
-  }
   main {
     margin-top: 0%;
   }
@@ -510,33 +545,6 @@ footer .footer-titre {
   }
   .restaurants .cards .card .flot, .restaurants .cards .card .flot-2 {
     top: 10px;
-  }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    height: 130px;
-  }
-  .footer-titre {
-    display: flex;
-    position: relative;
-    right: 5%;
-    bottom: -48px;
-    color: white;
-    height: 50px;
-  }
-  .footer-list {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    height: 50px;
-    right: 5%;
-    bottom: -50%;
-    padding: 0%;
-  }
-  .footer-list a {
-    color: white;
-    text-decoration: none;
   }
 }
 
