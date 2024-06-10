@@ -4,11 +4,12 @@ body {
 }
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
     padding-top: 10px;
-    margin-right: 40px;
+    margin: 0px 90px 0px 20px;
+    
     
     i {
         font-size: 20px;
@@ -55,6 +56,7 @@ main {
 
             h1 {
                 margin-top: 50px;
+                font-weight: 200;
             }
 
             .btns-like {
@@ -101,6 +103,7 @@ main {
     .card-content {
       display: flex;
       flex-direction: column;
+      margin-bottom: 20px;
 
         .titre{
             display: flex;
@@ -110,8 +113,10 @@ main {
                 margin-left: 10px;
                 border-bottom: 3px solid;
                 border-color: $color-tertiaire;
-                width: 11%;
-                font-size: 17px;
+                width: 13%;
+                font-size: 19px;
+                font-weight: 300;
+                font-family: $font-texte;
             }
         }
     }
@@ -121,7 +126,7 @@ main {
         justify-content: center;
         margin-left: 8px;
         width: 95%;
-        gap: 15px;
+        gap: 20px;
         font-family: $font-texte;
 
         .card {
@@ -206,7 +211,7 @@ main {
     .button {
         display: flex;
         justify-content: center;
-        margin: 40px;
+        margin: 25px 0px 45px 0px;
         
         .btn {
             display: flex;
@@ -258,16 +263,26 @@ main {
             justify-content: center;
             width: 70%;
             margin: 100px 200px 0px 225px;
-            gap: 50px;
+            gap: 20px;
 
             .resto-titre {
                 font-size: 20px;
                 
                 h1 {
-                    margin-top: 100px;
-                }
+                    margin-top: 60px;
+                }    
+                .btns-like {
+                    top: 6%;
+                    right: 28%;
+                }          
+            }
+            .titre {
+                width: 70%;
                 
-                                
+                h2 {
+                    font-size: 17px;
+                    font-weight: 300;
+                }
             }
             .btns-like {
                 display: flex;
@@ -277,6 +292,7 @@ main {
             }
             .card-content {
                 width: 60%;
+                
 
                 .check {
                     width: 60px;

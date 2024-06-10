@@ -4,11 +4,11 @@ body {
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 60px;
   padding-top: 10px;
-  margin-right: 40px;
+  margin: 0px 90px 0px 20px;
 }
 header i {
   font-size: 20px;
@@ -49,6 +49,7 @@ main .content .resto-titre {
 }
 main .content .resto-titre h1 {
   margin-top: 50px;
+  font-weight: 200;
 }
 main .content .resto-titre .btns-like {
   display: inline-block;
@@ -87,6 +88,7 @@ main .content .resto-titre .btns-like .icon-wrapper:hover .icon-gradient {
 main .card-content {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 main .card-content .titre {
   display: flex;
@@ -96,8 +98,10 @@ main .card-content .titre h2 {
   margin-left: 10px;
   border-bottom: 3px solid;
   border-color: #99E2D0;
-  width: 11%;
-  font-size: 17px;
+  width: 13%;
+  font-size: 19px;
+  font-weight: 300;
+  font-family: "roboto", sans-serif;
 }
 main .cards {
   display: flex;
@@ -105,7 +109,7 @@ main .cards {
   justify-content: center;
   margin-left: 8px;
   width: 95%;
-  gap: 15px;
+  gap: 20px;
   font-family: "roboto", sans-serif;
 }
 main .cards .card {
@@ -174,7 +178,7 @@ main .cards .card .check {
 main .button {
   display: flex;
   justify-content: center;
-  margin: 40px;
+  margin: 25px 0px 45px 0px;
 }
 main .button .btn {
   display: flex;
@@ -219,13 +223,24 @@ main .button .btn:hover {
     justify-content: center;
     width: 70%;
     margin: 100px 200px 0px 225px;
-    gap: 50px;
+    gap: 20px;
   }
   main .content .resto-titre {
     font-size: 20px;
   }
   main .content .resto-titre h1 {
-    margin-top: 100px;
+    margin-top: 60px;
+  }
+  main .content .resto-titre .btns-like {
+    top: 6%;
+    right: 28%;
+  }
+  main .content .titre {
+    width: 70%;
+  }
+  main .content .titre h2 {
+    font-size: 17px;
+    font-weight: 300;
   }
   main .content .btns-like {
     display: flex;

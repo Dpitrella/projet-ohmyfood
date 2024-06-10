@@ -159,6 +159,9 @@ main {
   font-family: "roboto", sans-serif;
   font-size: 17px;
 }
+.info .info-content p {
+  margin-top: 0%;
+}
 .info .btn {
   display: flex;
   justify-content: center;
@@ -169,7 +172,7 @@ main {
   height: 50px;
   width: 230px;
   font-size: 17px;
-  border-radius: 20px;
+  border-radius: 50px;
   border: none;
   color: white;
   align-items: center;
@@ -203,6 +206,7 @@ main {
   flex-direction: column;
   gap: 40px;
   align-items: center;
+  margin-left: 15px;
 }
 .function .sec-fun .fun {
   display: flex;
@@ -268,7 +272,7 @@ main {
   padding: 10px 10px 30px 10px;
 }
 .restaurants .restaurants-title {
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .restaurants .cards {
   display: flex;
@@ -290,7 +294,6 @@ main {
   width: 95%;
   height: 300px;
   background-color: white;
-  /**********************/
 }
 .restaurants .card .card-info {
   display: flex;
@@ -378,19 +381,24 @@ main {
     align-items: center;
   }
   main .info .info-titre {
-    font-size: 26px;
+    font-size: 28px;
   }
   main .info .info-content {
     font-size: 20px;
   }
+  main .info p {
+    font-weight: 300;
+    font-size: 18px;
+  }
   main .function {
     position: relative;
+    gap: 0px;
   }
   main .function .func-title {
     display: flex;
     position: relative;
     margin: 0;
-    left: 250px;
+    left: 210px;
     height: 80px;
     width: 80%;
   }
@@ -410,7 +418,7 @@ main {
     font-size: 15px;
   }
   main .function .sec-fun .fun {
-    width: 300px;
+    width: 330px;
   }
   main .function .sec-fun .fa-solid {
     display: flex;
@@ -419,18 +427,18 @@ main {
     margin: 0px;
   }
   .restaurants .restaurants-title {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
     display: flex;
     position: relative;
-    left: 16%;
+    left: 200px;
     width: 80%;
   }
   .restaurants .cards {
     display: grid;
-    grid-template-columns: 490px 490px;
+    grid-template-columns: 530px 510px;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
   }
   .restaurants .cards .card {
     height: 260px;
