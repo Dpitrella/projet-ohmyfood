@@ -5,6 +5,7 @@ body {
 
 main {
     margin-top: 4px;
+    padding: 0px 5px;
 }
 
 .info {
@@ -388,7 +389,7 @@ main {
 }
 /******************tablet*************/
 
-@media (min-width: 970px) and (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1024px) {
 
     
 
@@ -415,7 +416,7 @@ main {
                 display: flex;
                 position: absolute;
                 margin: 0;
-                left: 150px;
+                left: 100px;
                 top: 20px;
                 width: 50%;
             }
@@ -428,7 +429,8 @@ main {
                 position: absolute;
                 width: 90%;
                 top: 130px;
-                left: 55px;      
+                left: 55px;     
+                margin: 0%; 
                     
                 .info-num, .info-num-2, .info-num-3{
                     display: flex;
@@ -465,15 +467,15 @@ main {
             margin: 0px 0px 20px 0px;
             display: flex;
             position: relative;
-            left: 15%;
+            left: 100px;
             width: 80%;
         }
         .cards{
             display: grid;
-            grid-template-columns: 400px 400px;
+            grid-template-columns: 430px 430px;
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 60px;
             left: 0px;
             .card{
                 height: 100%;

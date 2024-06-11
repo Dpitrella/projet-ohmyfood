@@ -272,9 +272,6 @@ main .button .btn:hover {
     text-decoration: none;
     position: absolute;
   }
-  main .img-resto {
-    height: auto;
-  }
   main .content {
     top: 40%;
     align-items: center;
@@ -286,8 +283,8 @@ main .button .btn:hover {
   main .content .btns-like {
     display: flex;
     position: absolute;
-    right: 15%;
-    top: 50px;
+    right: 20%;
+    top: 0px;
   }
   main .content .card-content {
     width: 80%;

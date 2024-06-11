@@ -323,9 +323,7 @@ main {
     }
     main {
      
-        .img-resto {
-            height: auto;
-        }
+       
         .content {
             
             top: 40%;
@@ -339,8 +337,8 @@ main {
             .btns-like {
                 display: flex;
                 position: absolute;
-                right: 15%;
-                top: 50px;
+                right: 20%;
+                top: 0px;
             }
             .card-content {
                 width: 80%;
