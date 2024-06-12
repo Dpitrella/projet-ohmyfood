@@ -233,7 +233,7 @@ main .button .btn:hover {
   }
   main .content .resto-titre .btns-like {
     top: 6%;
-    right: 28%;
+    right: 20%;
   }
   main .content .titre {
     width: 70%;
@@ -245,7 +245,7 @@ main .button .btn:hover {
   main .content .btns-like {
     display: flex;
     position: absolute;
-    right: 25%;
+    right: 20%;
     top: 25px;
   }
   main .content .card-content {
@@ -283,7 +283,7 @@ main .button .btn:hover {
   main .content .btns-like {
     display: flex;
     position: absolute;
-    right: 20%;
+    right: 10%;
     top: 0px;
   }
   main .content .card-content {

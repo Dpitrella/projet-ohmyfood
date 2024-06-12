@@ -342,7 +342,7 @@ main {
   cursor: pointer;
   position: absolute;
   bottom: 60px;
-  right: 0px;
+  right: -20px;
 }
 .restaurants .card .btns-like .icon-wrapper {
   position: absolute;
@@ -458,6 +458,9 @@ main {
   .restaurants .cards .card .card-texte {
     padding-bottom: 20px;
     padding-left: 20px;
+  }
+  .restaurants .cards .card .btns-like {
+    right: -20px;
   }
   .restaurants .cards .card .flot, .restaurants .cards .card .flot-2 {
     top: -10px;

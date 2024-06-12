@@ -232,7 +232,7 @@ main {
             cursor: pointer;
             position: absolute;
             bottom: 60px;
-            right: 0px;
+            right: -20px;
 
             .icon-wrapper  {
                 position: absolute;
@@ -375,6 +375,9 @@ main {
                 .card-texte {
                     padding-bottom: 20px;
                     padding-left: 20px;
+                }
+                .btns-like {
+                    right: -20px;
                 }
                
                 .flot, .flot-2 {
