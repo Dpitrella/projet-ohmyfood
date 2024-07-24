@@ -3,6 +3,13 @@
 @import 'footer';
 @import 'load';
 
+@mixin gradient {
+    background: linear-gradient (to bottom,#ff79DA, #9356DC);
+}
+@mixin shadow-box {
+    box-shadow: -1px 7px 6px 1px darken($color: $color-gris, $amount: 20%);
+}
+
 body {
     margin: 0;
 }
@@ -56,13 +63,13 @@ main {
             border: none;
             color: white;
             align-items: center;
-            background: linear-gradient(to bottom, $color-secondaire, $color-primaire);
-            box-shadow: -1px 7px 6px 1px darken($color: $color-gris, $amount: 20%);
+            @include gradient;
+            @include shadow-box;
             transition: box-shadow 400ms, transform 400ms;
             
             &:hover {
                 transform: scale(1.01);
-                background: linear-gradient(to bottom, #ff94e1, #a373de);
+                @include gradient;
                 box-shadow: 0px 6px 11px 9px darken($color: $color-gris, $amount: 20%);
             }
             p {
@@ -144,7 +151,7 @@ main {
         height: 70px;
         border-radius: 20px;
         background-color: $color-gris;
-        box-shadow:  0px 10px 20px darken($color: $color-gris, $amount: 25%);
+        @include shadow-box;
         p {
             font-family: $font-texte;
             font-size: large;
@@ -254,7 +261,7 @@ main {
             }
 
             .icon-gradient {
-                background: linear-gradient(to bottom, $color-primaire, $color-secondaire);
+                @include gradient;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;

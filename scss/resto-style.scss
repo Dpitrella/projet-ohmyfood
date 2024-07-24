@@ -2,6 +2,13 @@
 @import 'resto-style';
 @import 'footer';
 
+@mixin gradient {
+    background: linear-gradient (to bottom,#ff79DA, #9356DC);
+}
+@mixin shadow-box {
+    box-shadow: -1px 7px 6px 1px darken($color: $color-gris, $amount: 20%);
+}
+
 body {
     margin: 0%;
 }
@@ -80,7 +87,7 @@ main {
                     left: 0;
                 }
                 .icon-gradient {
-                    background: linear-gradient(to bottom, $color-primaire, $color-secondaire);
+                    @include gradient;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
@@ -139,7 +146,7 @@ main {
             border-radius: 20px;
             width: 100%;
             height: 77px;
-            box-shadow: -2px 4px 20px 0px darken($color: $color-gris, $amount: 20%);
+            @include shadow-box;
             
             overflow: hidden;
             cursor: pointer;
@@ -226,13 +233,13 @@ main {
             width: 60%;
             height: 50px;
             color: white;
-            background: linear-gradient(to bottom, $color-secondaire, $color-primaire);
-            box-shadow: -2px 4px 20px 0px darken($color: $color-gris, $amount: 20%);
+            @include gradient;
+            @include shadow-box;
             transition: box-shadow 400ms, transform 400ms;
 
             &:hover {
                 transform: scale(1.01);
-                background: linear-gradient(to bottom, #ff94e1, #a373de);
+                @include gradient;
                 box-shadow: 0px 6px 11px 9px darken($color: $color-gris, $amount: 20%);
             }
         }
